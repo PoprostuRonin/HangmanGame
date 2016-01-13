@@ -1,0 +1,96 @@
+body {
+	background-image: url("background.png");
+	background-repeat: repeat;
+	background-position: center;
+
+	line-height: 1.44;
+
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#letters {
+	font-size: 50px;
+}
+
+.board {
+	text-align: center;
+	background-color: #133613;
+	padding: 100px 25px 100px 25px;
+	margin-top: 300px;
+}
+
+.window {
+	color: #FFF;
+	position: relative;
+	top: 50px;
+	margin: 50px auto 50px auto;
+	max-width: 600px;
+	box-shadow: #333 0 5px 15px;
+}
+
+.control {
+	background-color: #FFF;
+	padding: 5px 25px 5px 25px; 
+}
+
+.keyboard {
+	text-align: center;
+	position: relative;
+	top: 50px;
+	padding: 25px;
+	background-color: #FFF;
+	box-shadow: #333 0 5px 5px;
+}
+
+.key {
+	font-size: 25px;
+	margin: 3px;
+	padding: 5px;
+	background-color: #EEE;
+	border-radius: 5px;
+}
+
+.keynologic {
+	font-size: 25px;
+	margin: 3px;
+	padding: 5px;
+	background-color: #EEE;
+	border-radius: 5px;
+}
+
+.categoryselect {
+	background-color: #FFF;
+	font-size: 25px;
+	margin: 3px;
+	padding: 5px;
+	background-color: #EEE;
+	border-radius: 5px;
+}
+
+#newword {
+	margin: 5px;
+	background-color: #FFF;
+	border: solid 1px #AAA;
+}
+
+#guesses {
+	float: right;
+	font-size: 35px;
+	vertical-align: center;
+	text-align: right;
+	color: #000;
+}
+
+.note {
+	padding: 20px;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	text-align: center;
+}
+
+.note a {
+	text-decoration: none;
+	color: #333;
+}
