@@ -101,19 +101,12 @@ $(document).ready(function () {
 
 		//Clear visible word
 		visibleWord = ""
-		var newWord = true
 		for(i = 0; i < word.length; i++) {
 			if(word[i] == ' ') {
-				newWord = true
 				visibleWord += ' '
 			}
 			else {
-				console.log(isVowel(word[i]));
-				if(newWord) {
-					newWord = false
-					visibleWord += word[i]
-				}
-				else if (isVowel(word[i])) {
+				if (isVowel(word[i])) {
 					visibleWord += word[i]
 				}
 				else {
