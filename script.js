@@ -9,6 +9,10 @@ var currentWord = ""
 var visibleWord = ""
 var guesses = 5
 
+function isVowel(character) {
+	return character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U' || character == 'Y'
+}
+
 //Our replaceAt, because we can't just modify string like that
 String.prototype.replaceAt=function(index, character) {
     return this.substr(0, index) + character + this.substr(index+character.length);
@@ -100,8 +104,12 @@ $(document).ready(function () {
 				visibleWord += ' '
 			}
 			else {
+				console.log(isVowel(word[i]));
 				if(newWord) {
 					newWord = false
+					visibleWord += word[i]
+				}
+				else if (isVowel(word[i])) {
 					visibleWord += word[i]
 				}
 				else {
