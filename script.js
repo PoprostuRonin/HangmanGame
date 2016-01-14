@@ -44,6 +44,7 @@ function generatePlaceholder(wordDisplay) {
 $(document).ready(function () {
 	$("button.key").click(function() {
 		var key = $(this).html()
+		 $(this).attr("disabled", true);
 
 		//Check if player hit
 		var hit = false
@@ -87,6 +88,9 @@ $(document).ready(function () {
 		//Update guesses
 		guesses = 5
 		$("#guesses").html("Guesses left: " + guesses)
+
+		//Restart keyboard
+		$(".key").attr("disabled", false);
 
 		//Get random word and make it upper letters
 		var word = words[category][Math.floor((Math.random() * 5))]
